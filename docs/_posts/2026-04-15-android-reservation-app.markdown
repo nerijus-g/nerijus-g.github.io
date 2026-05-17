@@ -4,6 +4,11 @@ title:  "Android Tennis Court Reservation App"
 date:   2026-04-15 21:51:17 +0000
 sections:
   - level: 1
+    heading: "Description"
+    contents:
+      - text: "It's an app, that plays sound when new date found on third-party website. Checks are executed every minute. User installs app, launches app, set ups permissions and starts/stops service from app UI."
+
+  - level: 1
     heading: "Features"
     contents:
       - text: |
