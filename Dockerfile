@@ -6,4 +6,6 @@ WORKDIR /srv/jekyll
 
 RUN gem install bundler jekyll
 
+COPY docker/restart.sh / 
+
 EXPOSE 4000

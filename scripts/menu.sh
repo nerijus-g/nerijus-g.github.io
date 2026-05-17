@@ -12,6 +12,7 @@ options=(
     "Docker compose up"
     "Emacs"
     "Jekyll bash"
+    "Jekyll restart"
     "Docker compose down"
     "Quit"
 )
@@ -35,10 +36,15 @@ while true; do
 		;;
             4)
 		cd $PROJECT_ROOT
+		docker compose exec jekyll /restart.sh > /dev/null 2>&1 &
+		break
+		;;
+            5)
+		cd $PROJECT_ROOT
 		docker compose down
 		break
 		;;
-	    5)
+	    6)
 		break 2
 		;;
             *) echo "invalid option $REPLY";;
