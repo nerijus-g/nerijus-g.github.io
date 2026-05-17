@@ -32,4 +32,13 @@ sections:
         image: "/assets/tennis/Start.jpg"
       - text: "Press Stop (After starting service) to destroy foreground service"
         image: "/assets/tennis/Stop.jpg"
+
+  - level: 1
+    heading: "Every minute notifications"
+    contents:
+      - text: "With newest date"
+        image: "/assets/tennis/Notification1.jpg"
+      - text: "With error if occured"
+        image: "/assets/tennis/Notification2.jpg"
+
 ---
