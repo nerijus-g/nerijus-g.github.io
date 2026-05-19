@@ -56,7 +56,7 @@ layout: default
             </div>
 
             {% if block.image %}
-              <img src="{{ block.image }}" alt="{{ section.heading }}">
+              <img src="{{ block.image }}?v={{ site.time | date: '%s' }}" alt="{{ section.heading }}">
             {% endif %}
           </div>
         {% endfor %}
